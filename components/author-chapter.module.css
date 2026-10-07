@@ -107,7 +107,7 @@
 
 .photo img {
   object-fit: cover;
-  object-position: 40% 26%;
+  object-position: 50% 0%;
 }
 
 .card {
@@ -754,15 +754,15 @@
 
 /* Keep Aline's face clear and the biography readable with the supplied portrait. */
 .cardCopy{font-size:15px;line-height:1.65}.cardLabel{font-size:11px;letter-spacing:.13em}
-.stage{height:590px}.card{padding:22px 27px}.photo img{object-position:40% 26%}
+.stage{height:590px}.card{padding:22px 27px}.photo img{object-position:50% 0%}
 @media(min-width:701px) and (max-width:1100px){.stage{height:680px}.cardCopy{font-size:14px}.card{padding:22px}.copy h2{font-size:7vw}}
 @media(max-width:700px){
  .stage{width:88%;height:auto;display:flex;flex-direction:column;padding-top:34px}
  .copy{position:relative;inset:auto;width:100%;padding:0}.copy h2{font-size:16vw;line-height:.95}
  .titleMask:nth-child(1)>span,.titleMask:nth-child(2)>span{font-size:1em}
  .subcopy{font-size:20px;line-height:1.4;margin-top:22px}
- .photo{position:relative;inset:auto;width:100%;max-width:none;height:auto;aspect-ratio:.88;margin-top:28px;border-radius:5px 5px 70px 5px}
- .photo img{object-position:35% 22%}
+ .photo{position:relative;inset:auto;width:100%;max-width:none;height:auto;aspect-ratio:2/3;margin-top:28px;border-radius:5px 5px 70px 5px}
+ .photo img{object-position:50% 0%}
  .card{position:relative;inset:auto;width:100%;min-height:0;padding:25px;margin-top:-30px;align-self:flex-start;border-radius:5px;backdrop-filter:none;background:#faf7f0}
  .cardLabel{font-size:11px;letter-spacing:.13em}.cardCopy{font-size:16px;line-height:1.7;margin:16px 0}
  .cta{font-size:19px;white-space:normal}.threadMobile{display:none}

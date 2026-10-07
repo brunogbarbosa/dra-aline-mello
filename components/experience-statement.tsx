@@ -83,7 +83,7 @@ export function ExperienceStatement() {
     <figure className={styles.photo} data-experience-motion="photo">
       <Image
         src={site.images.beauty}
-        alt="Dra. Aline Mello em sua clínica"
+        alt="Detalhe do rosto da Dra. Aline Mello com a mão junto à face"
         fill
         sizes="(max-width: 700px) 94vw, (max-width: 1100px) 50vw, 45vw"
       />

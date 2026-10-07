@@ -86,9 +86,9 @@ export function AuthorChapter() {
       <figure className={styles.photo} data-author-motion="photo">
         <Image
           src={site.images.about}
-          alt="Dra. Aline Mello em sua clínica, usando blazer vermelho"
+          alt="Dra. Aline Mello sentada, usando blusa de um ombro só"
           fill
-          sizes="(max-width: 700px) 51vw, (max-width: 1100px) 56vw, 54vw"
+          sizes="(max-width: 700px) 88vw, (max-width: 1100px) 56vw, 54vw"
         />
       </figure>
 

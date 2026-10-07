@@ -12,7 +12,7 @@ export const site = {
   instagram: 'https://www.instagram.com/dra._alinemello/', instagramHandle: '@dra._alinemello',
   philosophy: ['NATURALIDADE', 'ANTES DE', 'EXCESSOS.'],
   colors: { paper: '#faf7f0', ink: '#30251f', taupe: '#735336', champagne: '#d9c5a6', dark: '#30251f' },
-  images: { hero: '/images/aline-retrato.webp', about: '/images/aline-clinica.webp', beauty: '/images/aline-cuidado.webp' },
+  images: { hero: '/images/aline-hero-estudio.webp', essence: '/images/aline-essencia-estudio.webp', about: '/images/aline-sobre-estudio.webp', beauty: '/images/aline-experiencia-detalhe.webp' },
   procedures: [] as Procedure[], office: [] as { src: string; alt: string }[], testimonials: [] as Testimonial[],
   results: { enabled: true, items: [
     {image:'/images/resultado-01.webp',label:'Harmonia em cada traço',alt:'Registro comparativo de harmonização facial fornecido para o site da Dra. Aline Mello',orientation:'horizontal',beforeShare:658/1284,comparisonRatio:626/1281},

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useId } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { appointmentUrl } from '@/data/site';
+import { appointmentUrl, site } from '@/data/site';
 import { useCampaignMotion } from './use-campaign-motion';
 
 const metrics = [
@@ -49,7 +49,7 @@ export function CampaignHero() {
         <div className="campaign-action"><a className="campaign-cta" href={appointmentUrl} target="_blank" rel="noreferrer"><span>AGENDAR AVALIAÇÃO</span><ArrowRight size={22} strokeWidth={1.2}/></a></div>
       </div>
       <figure className="campaign-portrait">
-        <div className="campaign-silhouette"><Image className="campaign-original" src="/images/aline-retrato.webp" alt="Dra. Aline Mello" fill preload sizes="(max-width:700px) 90vw, (max-width:1100px) 50vw, 45vw"/></div>
+        <div className="campaign-silhouette"><Image className="campaign-original" src={site.images.hero} alt="Retrato da Dra. Aline Mello com a mão sob o queixo" fill preload sizes="(max-width:700px) 90vw, (max-width:1100px) 50vw, 45vw"/></div>
       </figure>
       <SmileSeal/>
       <p className="campaign-editorial">Seu rosto.<br/>Sua história.<span aria-hidden="true"/></p>
