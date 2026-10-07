@@ -48,12 +48,12 @@
 .gallery-photo{aspect-ratio:.8;background:#251d18}
 .gallery-item figcaption{font-size:14px;line-height:1.6}
 .gallery-item figcaption>span:last-child{font-size:10px}
-.gallery-item:last-child{grid-column:2}
 .gallery-end p{font-size:14px;color:#d8cbbc}
 .social-chapter{background:#e1cfb0}
 .closing-chapter{background:#30251f}.closing-chapter h2 em{color:#d9c5a6}
 .footer{background:#30251f}.footer p{font-size:14px}
 .comparison{max-width:100%;flex-shrink:0}
+.compare-half.before{background-color:inherit}
 .viewer-range{font-size:14px}.viewer-note{font-size:13px}
 .viewer-mode{font-size:14px}
 /* Let the text determine section height; keep the signature below the metrics. */

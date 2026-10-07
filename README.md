@@ -25,6 +25,6 @@ Dados, Instagram, WhatsApp, registro profissional e galeria: `data/site.ts`. Ide
 
 O contato e CRBM foram transcritos da referência fornecida. As fotografias são os materiais enviados para este projeto. Não foram transferidos retratos, resultados, métricas ou depoimentos da profissional do template.
 
-A galeria preserva as fotografias completas. Comparação por controle deslizante disponível nos quatro registros lado a lado; montagens com imagens sobrepostas abrem integralmente. Cada resultado é individual.
+A galeria apresenta os seis registros enviados, preservando as fotografias completas. Todos oferecem ampliação e comparação por controle deslizante, com recortes ajustados à divisão de cada montagem. Cada resultado é individual.
 
 Favicon SVG, ICO e ícone Apple personalizados com monograma AM. Sem formulários ou coleta própria de dados; agendamento abre o WhatsApp.
