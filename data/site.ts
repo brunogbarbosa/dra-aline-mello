@@ -1,7 +1,7 @@
 export type Procedure = { name: string; description: string; image: string };
 export type Testimonial = { quote: string; name: string };
 export const site = {
-  name: 'Aline Mello', monogram: 'AM',
+  name: 'Aline Mello',
   headline: 'Rejuvenescimento com sofisticação e naturalidade.',
   cro: 'Biomédica Esteta · CRBM 03594',
   bio: 'Aline Mello é biomédica esteta, com atuação em harmonização facial. Seu olhar une sofisticação e naturalidade para valorizar os traços e a expressão de cada pessoa.',

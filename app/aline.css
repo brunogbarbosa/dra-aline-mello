@@ -1,7 +1,13 @@
 /* Aline Mello: warm materials, a fine gold line, and room for the real portrait. */
 :root{--rose:#af8a56;--rose-deep:#735336;--rose-light:#d9c5a6;--ivory:#faf7f0;--wine:#30251f;--line:#73533630}
-.header .brand-type{font-size:14px;letter-spacing:.18em}
-.header .brand-type small{font-size:10px;letter-spacing:.12em}
+.brand-logo{display:block;max-width:100%;height:auto;object-fit:contain}
+.brand-logo-horizontal{display:flex;align-items:center;gap:16px;width:260px;max-width:100%}
+.brand-logo-horizontal img{display:block;height:auto;object-fit:contain;flex-shrink:0}
+.brand-logo-horizontal img:first-child{width:22%}
+.brand-logo-horizontal img:last-child{width:calc(78% - 16px)}
+.menu-logo{width:220px;margin:0 0 30px}
+.footer-name{display:block;width:260px;max-width:100%;align-self:start}
+.closing-monogram.brand-logo{width:min(52vw,700px);height:auto;bottom:-12%;right:-3%;opacity:.035;pointer-events:none}
 .header.scrolled{background:#faf7f0f2}
 .campaign{min-height:820px;height:100svh;max-height:1050px;background:#faf7f0}
 .campaign::after{height:90px;background:linear-gradient(180deg,#f1e9dc00,#f1e9dc)}
@@ -17,13 +23,13 @@
 .campaign-original{object-fit:cover;object-position:50% 0%}
 .campaign-portrait::after{content:'';position:absolute;inset:14px -14px -14px 14px;border:1px solid #af8a5680;border-radius:46% 46% 5px 5px;pointer-events:none}
 .campaign-seal{top:auto;bottom:64px;right:37%;width:130px;background:var(--ivory);border-radius:50%;box-shadow:0 0 0 7px #faf7f06b}
-.campaign-seal .campaign-seal-mark{font-family:var(--serif);font-size:49px;font-style:italic;letter-spacing:-5px}
 .campaign-editorial{top:15px;right:1%;font-size:18px;display:none}
 .campaign-metrics{width:44%;grid-template-columns:1.4fr 1fr;margin-top:38px}
 .campaign-metric{gap:8px;padding:0 20px;text-align:left}
 .campaign-metric strong{font-size:29px}
 .campaign-metric>span{font-size:10px;align-self:start;max-width:none;letter-spacing:.12em}
 .campaign-signature{bottom:35px}
+.campaign-signature-logo{width:185px;margin-bottom:8px}
 .campaign-signature p{font-size:11px}.campaign-signature em{font-size:18px}
 .campaign-organic-one{background:#eee5d6;left:67%;top:-25%;width:60%;transform:rotate(23deg)}
 .campaign-organic-two{background:#e4d6bf;left:33%;top:83%}
@@ -81,7 +87,11 @@
  .gallery-item:nth-child(3n + 2){padding-top:0}.gallery-item:last-child{grid-column:auto}
 }
 @media(max-width:700px){
- .header .brand-monogram{font-size:46px}.header .brand-type{font-size:12px}.header .brand-type small{font-size:9px}
+ .brand-logo-horizontal{width:215px;gap:12px}
+ .brand-logo-horizontal img:last-child{width:calc(78% - 12px)}
+ .menu-logo{width:190px;margin-bottom:25px}
+ .footer-name{width:240px}
+ .closing-monogram.brand-logo{width:85vw;bottom:-4%;right:-15%}
  .campaign{height:auto;min-height:0;max-height:none;padding:88px 6% 0}
  .campaign-inner{height:auto;min-height:0;padding-bottom:50px;display:flex;flex-direction:column}
  .campaign-copy{width:100%;padding-top:37px}.campaign-kicker{font-size:10px;letter-spacing:.13em;margin-bottom:22px}

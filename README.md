@@ -27,4 +27,6 @@ O contato e CRBM foram transcritos da referência fornecida. As fotografias são
 
 A galeria apresenta os seis registros enviados, preservando as fotografias completas. Todos oferecem ampliação e comparação por controle deslizante, com recortes ajustados à divisão de cada montagem. Cada resultado é individual.
 
-Favicon SVG, ICO e ícone Apple personalizados com monograma AM. Sem formulários ou coleta própria de dados; agendamento abre o WhatsApp.
+Logo oficial extraída do PDF fornecido, com transparência e acabamento dourado preservados. Cabeçalho em composição horizontal; rodapé e menu com a assinatura completa; selos e ícones PNG, ICO e Apple com o símbolo original. Arquivos em `public/images/brand` e componente compartilhado em `components/brand-logo.tsx`.
+
+Sem formulários ou coleta própria de dados; agendamento abre o WhatsApp.

@@ -5,6 +5,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { useEffect, useId, useRef } from 'react';
 import { site } from '@/data/site';
 import styles from './experience-statement.module.css';
+import { BrandLogo } from './brand-logo';
 
 function ImageSeal({ id }: { id: string }) {
   const sealPath = `${id}-experience-seal`;
@@ -16,7 +17,7 @@ function ImageSeal({ id }: { id: string }) {
     <text className={styles.sealCopy} textLength="282" lengthAdjust="spacing">
       <textPath href={`#${sealPath}`} startOffset="1%">ESTÉTICA · SAÚDE · CONFIANÇA · </textPath>
     </text>
-    <text className={styles.sealMark} x="63" y="74" textAnchor="middle">am.</text>
+    <image href="/images/brand/simbolo-aline-mello.webp" x="35" y="43" width="56" height="40" />
   </svg>;
 }
 
@@ -96,7 +97,7 @@ export function ExperienceStatement() {
     </figure>
 
     <div className={styles.quote} data-experience-motion="quote">
-      <span className={styles.quoteMark} aria-hidden="true">am.</span>
+      <span className={styles.quoteMark} aria-hidden="true"><BrandLogo variant="symbol" decorative /></span>
       <div>
         <p>Mais do que estética,<br />é sobre se sentir bem com quem você é.</p>
         <footer><span aria-hidden="true" /><span>SOFISTICAÇÃO & NATURALIDADE</span></footer>

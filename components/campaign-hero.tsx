@@ -5,6 +5,7 @@ import { useId } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { appointmentUrl, site } from '@/data/site';
 import { useCampaignMotion } from './use-campaign-motion';
+import { BrandLogo } from './brand-logo';
 
 const metrics = [
   { value: 'Naturalidade', label: 'EM CADA ESCOLHA' },
@@ -26,7 +27,7 @@ function SmileSeal() {
       <text fill="currentColor" textAnchor="middle">
         <textPath href={`#${id}-bottom`} startOffset="50%">NATURALIDADE</textPath>
       </text>
-      <text className="campaign-seal-mark" x="90" y="104" textAnchor="middle" fill="currentColor">am.</text>
+      <image href="/images/brand/simbolo-aline-mello.webp" x="50" y="61" width="80" height="58" />
     </svg>
   </div>;
 }
@@ -56,7 +57,7 @@ export function CampaignHero() {
       <div className="campaign-metrics" aria-label="Naturalidade e registro profissional">
         {metrics.map(metric=><div className="campaign-metric" key={metric.value}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
       </div>
-      <div className="campaign-signature"><span aria-hidden="true"/><div><p>DRA. ALINE MELLO</p><em>Biomédica Esteta · CRBM 03594</em></div></div>
+      <div className="campaign-signature"><span aria-hidden="true"/><div><BrandLogo variant="signature" className="campaign-signature-logo"/><em>Biomédica Esteta · CRBM 03594</em></div></div>
     </div>
   </section>;
 }

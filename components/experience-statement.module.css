@@ -162,13 +162,6 @@
   letter-spacing: .15em;
 }
 
-.sealMark {
-  fill: currentColor;
-  font-family: var(--serif);
-  font-size: 36px;
-  font-style: italic;
-}
-
 .quote {
   position: absolute;
   z-index: 3;
@@ -183,11 +176,14 @@
 .quoteMark {
   align-self: stretch;
   border-right: 1px solid color-mix(in srgb, var(--rose-deep) 55%, transparent);
-  color: #a7804d;
-  font-family: Georgia, serif;
-  font-size: clamp(64px, 5.5vw, 106px);
-  font-weight: 700;
-  line-height: .62;
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+}
+
+.quoteMark img {
+  width: 100%;
+  height: auto;
 }
 
 .quote > div {
@@ -509,10 +505,6 @@
     margin-top: clamp(25px, 7vw, 31px);
   }
 
-  .quoteMark {
-    font-size: clamp(55px, 15vw, 65px);
-  }
-
   .quote > div {
     padding-left: clamp(16px, 4.5vw, 20px);
   }
@@ -598,6 +590,6 @@
 .photoArc{transform:translateX(-25%)}
 .photoWash{background:linear-gradient(0deg,#30251f50,transparent 35%)}
 .photoCopy{top:auto;bottom:8%;right:7%;color:#fff7e8;text-shadow:0 1px 12px #30251f90}
-.photo img{object-position:100% 0%}.quoteMark{font-family:var(--serif);font-style:italic;font-size:40px;font-weight:400;line-height:1;letter-spacing:-4px}
+.photo img{object-position:100% 0%}
 .quote footer>span:last-child{font-size:10px;letter-spacing:.12em;line-height:1.6;width:auto;height:auto;background:none}
-@media(max-width:700px){.root{background:#f7f0e4}.photo{width:100%;margin-inline:0}.photoCopy{top:auto;bottom:8%}.quoteMark{font-size:33px}.subtitle{font-size:11px;white-space:normal;line-height:1.8}.quote p{font-size:22px;line-height:1.4}.topline p{font-size:11px}}
+@media(max-width:700px){.root{background:#f7f0e4}.photo{width:100%;margin-inline:0}.photoCopy{top:auto;bottom:8%}.subtitle{font-size:11px;white-space:normal;line-height:1.8}.quote p{font-size:22px;line-height:1.4}.topline p{font-size:11px}}

@@ -6,6 +6,7 @@ import { site, appointmentUrl } from '@/data/site';
 import { EssenceChapter } from './essence-chapter';
 import { AuthorChapter } from './author-chapter';
 import { ExperienceStatement } from './experience-statement';
+import { BrandLogo } from './brand-logo';
 
 const pad = (n:number) => String(n+1).padStart(2,'0');
 function Tag({children}:{children:React.ReactNode}){return <p className="chapter-tag">{children}</p>}
@@ -19,7 +20,7 @@ export function Chapters(){return <>
   <section id="experiencia" className="ritual-chapter"><div className="ritual-intro"><Tag>O seu tempo / Sua experiência</Tag><h2>Cada encontro.<br/>Um novo<br/><em>cuidado.</em></h2><p>E ele começa com você.</p></div><div className="ritual-list">{[['Escuta','Um momento para compartilhar o que você procura. Para conversar, perguntar e se sentir à vontade.'],['Planejamento','Suas necessidades orientam as escolhas. Cada etapa é conversada, cada detalhe tem um propósito.'],['Cuidado','Atenção ao seu conforto e à sua individualidade, do começo ao fim.'],['Acompanhamento','O encontro termina. O cuidado continua, com orientações e espaço para suas dúvidas.']].map(([title,copy],i)=><article key={title} data-reveal><span>{pad(i)}</span><div><h3>{title}</h3><p>{copy}</p></div><ArrowUpRight size={22} strokeWidth={1}/></article>)}</div></section>
   <RealTestimonials/>
   <section className="social-chapter"><Tag>Mais perto, todos os dias.</Tag><a href={site.instagram} target="_blank" rel="noreferrer"><span>Acompanhe<br/><em>o nosso olhar.</em></span><ArrowUpRight strokeWidth={.7}/></a><div><span>{site.instagramHandle}</span><span>INSTAGRAM</span></div></section>
-  <section id="contato" className="closing-chapter"><Tag>O próximo passo é seu.</Tag><h2 data-reveal>Seu cuidado<br/>começa com<br/><em>uma conversa.</em></h2><div className="closing-bottom"><p>Um primeiro encontro.<br/>Novas possibilidades.</p><ContactLink/><span>{site.locations}</span></div><span className="closing-monogram" aria-hidden="true">{site.monogram.toLowerCase()}.</span></section>
+  <section id="contato" className="closing-chapter"><Tag>O próximo passo é seu.</Tag><h2 data-reveal>Seu cuidado<br/>começa com<br/><em>uma conversa.</em></h2><div className="closing-bottom"><p>Um primeiro encontro.<br/>Novas possibilidades.</p><ContactLink/><span>{site.locations}</span></div><BrandLogo variant="symbol" className="closing-monogram" decorative/></section>
 </>}
 
 function ResultGallery(){const[active,setActive]=useState<number|null>(null);const[compare,setCompare]=useState(false);const[value,setValue]=useState(50);const dialog=useRef<HTMLDialogElement>(null);const opener=useRef<HTMLButtonElement|null>(null);const items=site.results.items;const item=active===null?null:items[active];

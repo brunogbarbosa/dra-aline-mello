@@ -5,6 +5,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { useEffect, useId, useRef } from 'react';
 import { site } from '@/data/site';
 import styles from './author-chapter.module.css';
+import { BrandLogo } from './brand-logo';
 
 const biography = site.bio;
 
@@ -18,7 +19,7 @@ function BrandSeal({ id }: { id: string }) {
     <text className={styles.sealText} textLength="280" lengthAdjust="spacing">
       <textPath href={`#${pathId}`} startOffset="1%">HARMONIZAÇÃO FACIAL · ALINE MELLO · </textPath>
     </text>
-    <text className={styles.sealMark} x="60" y="70" textAnchor="middle">am.</text>
+    <image href="/images/brand/simbolo-aline-mello.webp" x="35" y="42" width="50" height="36" />
     <circle cx="8" cy="60" r="1.6" />
     <circle cx="112" cy="60" r="1.6" />
   </svg>;
@@ -135,7 +136,7 @@ export function AuthorChapter() {
     <footer className={styles.closing}>
       <p className={styles.closingEyebrow} data-author-motion="final"><span />NOSSA FILOSOFIA DE CUIDADO<span /></p>
       <div className={styles.closingRow}>
-        <div className={styles.closingMonogram} aria-hidden="true"><strong>am.</strong><span /></div>
+        <div className={styles.closingMonogram} aria-hidden="true"><BrandLogo variant="symbol" decorative /><span /></div>
         <p className={styles.closingStatement}>
           <span data-author-motion="final">Precisão em cada escolha.</span>
           <em data-author-motion="final">Cuidado em cada encontro.</em>
