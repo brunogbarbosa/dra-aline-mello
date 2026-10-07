@@ -15,11 +15,14 @@ function BrandSeal({ id }: { id: string }) {
   return <svg className={styles.seal} viewBox="0 0 120 120" aria-hidden="true" focusable="false">
     <defs>
       <path id={pathId} d="M 15,60 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" />
+      <mask id={`${pathId}-logo`} style={{ maskType: 'alpha' }}>
+        <image href="/images/brand/simbolo-aline-mello.webp" x="35" y="42" width="50" height="36" />
+      </mask>
     </defs>
     <text className={styles.sealText} textLength="280" lengthAdjust="spacing">
       <textPath href={`#${pathId}`} startOffset="1%">HARMONIZAÇÃO FACIAL · ALINE MELLO · </textPath>
     </text>
-    <image href="/images/brand/simbolo-aline-mello.webp" x="35" y="42" width="50" height="36" />
+    <rect x="35" y="42" width="50" height="36" fill="currentColor" mask={`url(#${pathId}-logo)`} />
     <circle cx="8" cy="60" r="1.6" />
     <circle cx="112" cy="60" r="1.6" />
   </svg>;

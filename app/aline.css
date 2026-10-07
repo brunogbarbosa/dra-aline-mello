@@ -1,10 +1,12 @@
 /* Aline Mello: warm materials, a fine gold line, and room for the real portrait. */
 :root{--rose:#af8a56;--rose-deep:#735336;--rose-light:#d9c5a6;--ivory:#faf7f0;--wine:#30251f;--line:#73533630}
 .brand-logo{display:block;max-width:100%;height:auto;object-fit:contain}
+.brand-logo-brown{background:var(--rose-deep);mask-mode:alpha;mask-size:contain;mask-repeat:no-repeat;mask-position:center;-webkit-mask-size:contain;-webkit-mask-repeat:no-repeat;-webkit-mask-position:center}
+.brand-logo-brown>img{display:block;width:100%;height:auto;opacity:0}
 .brand-logo-horizontal{display:flex;align-items:center;gap:16px;width:260px;max-width:100%}
-.brand-logo-horizontal img{display:block;height:auto;object-fit:contain;flex-shrink:0}
-.brand-logo-horizontal img:first-child{width:22%}
-.brand-logo-horizontal img:last-child{width:calc(78% - 16px)}
+.brand-logo-horizontal>*{display:block;height:auto;object-fit:contain;flex-shrink:0}
+.brand-logo-horizontal>:first-child{width:22%}
+.brand-logo-horizontal>:last-child{width:calc(78% - 16px)}
 .menu-logo{width:220px;margin:0 0 30px}
 .footer-name{display:block;width:260px;max-width:100%;align-self:start}
 .closing-monogram.brand-logo{width:min(52vw,700px);height:auto;bottom:-12%;right:-3%;opacity:.035;pointer-events:none}
@@ -88,7 +90,7 @@
 }
 @media(max-width:700px){
  .brand-logo-horizontal{width:215px;gap:12px}
- .brand-logo-horizontal img:last-child{width:calc(78% - 12px)}
+ .brand-logo-horizontal>:last-child{width:calc(78% - 12px)}
  .menu-logo{width:190px;margin-bottom:25px}
  .footer-name{width:240px}
  .closing-monogram.brand-logo{width:85vw;bottom:-4%;right:-15%}

@@ -8,18 +8,26 @@ const artwork = {
 
 type BrandLogoProps = {
   variant?: keyof typeof artwork | 'horizontal';
+  tone?: 'brown' | 'gold';
   className?: string;
   decorative?: boolean;
   eager?: boolean;
 };
 
-export function BrandLogo({ variant = 'full', className = '', decorative = false, eager = false }: BrandLogoProps) {
+export function BrandLogo({ variant = 'full', tone = 'brown', className = '', decorative = false, eager = false }: BrandLogoProps) {
   const alt = decorative ? '' : 'Dra. Aline Mello — Harmonização Facial';
 
   if (variant === 'horizontal') {
     return <span className={`brand-logo-horizontal ${className}`} role={decorative ? undefined : 'img'} aria-label={alt || undefined} aria-hidden={decorative || undefined}>
-      <Image {...artwork.symbol} alt="" unoptimized loading={eager ? 'eager' : 'lazy'} />
-      <Image {...artwork.signature} alt="" unoptimized loading={eager ? 'eager' : 'lazy'} />
+      <BrandLogo variant="symbol" tone={tone} decorative eager={eager} />
+      <BrandLogo variant="signature" tone={tone} decorative eager={eager} />
+    </span>;
+  }
+
+  if (tone === 'brown') {
+    const mask = `url("${artwork[variant].src}")`;
+    return <span className={`brand-logo brand-logo-brown ${className}`} style={{ maskImage: mask, WebkitMaskImage: mask }} role={decorative ? undefined : 'img'} aria-label={alt || undefined} aria-hidden={decorative || undefined}>
+      <Image {...artwork[variant]} alt="" unoptimized loading={eager ? 'eager' : 'lazy'} />
     </span>;
   }
 

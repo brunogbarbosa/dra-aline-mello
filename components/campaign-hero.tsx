@@ -19,6 +19,9 @@ function SmileSeal() {
       <defs>
         <path id={`${id}-top`} d="M18 90a72 72 0 0 1 144 0"/>
         <path id={`${id}-bottom`} d="M12 90a78 78 0 0 0 156 0"/>
+        <mask id={`${id}-logo`} style={{ maskType: 'alpha' }}>
+          <image href="/images/brand/simbolo-aline-mello.webp" x="50" y="61" width="80" height="58" />
+        </mask>
       </defs>
       <circle pathLength="1" cx="90" cy="90" r="54" stroke="currentColor" strokeWidth=".7"/>
       <text fill="currentColor" textAnchor="middle">
@@ -27,7 +30,7 @@ function SmileSeal() {
       <text fill="currentColor" textAnchor="middle">
         <textPath href={`#${id}-bottom`} startOffset="50%">NATURALIDADE</textPath>
       </text>
-      <image href="/images/brand/simbolo-aline-mello.webp" x="50" y="61" width="80" height="58" />
+      <rect x="50" y="61" width="80" height="58" fill="currentColor" mask={`url(#${id}-logo)`} />
     </svg>
   </div>;
 }

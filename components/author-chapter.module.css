@@ -304,12 +304,12 @@
   gap: clamp(25px, 2.7vw, 52px);
 }
 
-.closingMonogram img {
+.closingMonogram > :first-child {
   width: clamp(42px, 3.5vw, 67px);
   height: auto;
 }
 
-.closingMonogram span,
+.closingMonogram > span:last-child,
 .closingSeal > span {
   width: clamp(55px, 8vw, 154px);
   height: 1px;
@@ -499,7 +499,7 @@
     font-size: clamp(27px, 3.2vw, 38px);
   }
 
-  .closingMonogram span,
+  .closingMonogram > span:last-child,
   .closingSeal > span {
     width: 46px;
   }
@@ -507,7 +507,7 @@
 
 @media (max-width: 860px) and (min-width: 701px) {
   .sideNote,
-  .closingMonogram span,
+  .closingMonogram > span:last-child,
   .closingSeal > span,
   .closingEyebrow span {
     display: none;
